@@ -1,70 +1,66 @@
 # Privacy Policy for Sayasky Voice
 
-*Last Updated: November 2026*
-
 **Hosted Privacy Policy URL:**
 [https://sayasky-s.github.io/sayasky-voice-policy/](https://sayasky-s.github.io/sayasky-voice-policy/)
 
 ---
 
-Welcome to **Sayasky Voice** ("we", "our", or "us"). We respect your privacy and are committed to protecting it. This Privacy Policy explains our data practices for the Sayasky Voice mobile application (Package Name: `com.sayasky.voice`).
+Welcome to **Sayasky Voice** ("we", "our", or "us"). We respect your privacy and are committed to protecting it. This Privacy Policy explains how information is handled in the Sayasky Voice mobile learning app.
 
-Sayasky Voice helps learners turn photos of English textbook pages or worksheets into interactive, word-synchronized pronunciation lessons with Arabic support.
+Sayasky Voice helps learners turn photos of English textbook pages and worksheets into interactive, word-by-word pronunciation lessons with Arabic guidance.
 
 ---
 
 ## 1. Information We Do NOT Collect
 - **No User Accounts or Personal Identifiers:** We do not require registration or login. We do not collect names, email addresses, phone numbers, postal addresses, or contacts.
-- **No Microphone Recording:** Microphone recording (`RECORD_AUDIO`) is disabled in the release app. Audio features play back synthesized pronunciation audio only.
-- **No Location Tracking:** We do not request or collect GPS, fine location, or coarse location data.
-- **No Financial Data or Third-Party Ads:** We do not collect payment card information, display third-party advertisements, or share data with ad networks or data brokers.
+- **No Microphone Recording:** The app does not use your microphone or record your voice. Audio features play back spoken learning lessons only.
+- **No Location Tracking:** We do not request or collect GPS coordinates or location data.
+- **No Financial Data or Third-Party Ads:** We do not collect payment card details, display third-party advertisements, or sell data to ad networks or data brokers.
 
 ---
 
 ## 2. How Page Photos & Study Text Are Processed
-When you choose **Camera** or **Import from Gallery** (restricted to images only):
-- **EXIF Metadata Stripping:** Before upload, your selected page image is resized on-device (maximum 1600px) and re-encoded as a JPEG, stripping EXIF camera/location metadata.
-- **Ephemeral Text Recognition (OCR):** The prepared image is sent over encrypted HTTPS/TLS to extract interactive English word boxes for your reading canvas. Photos are processed strictly for core app functionality and are not linked to a user identity or profile.
-- **Word-Synchronized Speech & L1 Tips:** Recognized English text or curated story phrases are processed to deliver US/UK pronunciation playback and Arabic articulation tips. Repeated audio clips may be cached anonymously by content hash to reduce latency.
+When you choose **Camera** or **Import from Gallery**:
+- **Selected Photo Only:** The app accesses only the single page photo you select and never scans your private gallery.
+- **Hidden Location Tags Removed:** Before a selected photo is processed, it is optimized on your device and stripped of hidden camera and location tags.
+- **Encrypted Text Reading & Voice Playback:** Your prepared page photo is sent over an encrypted connection strictly to recognize printed English words and deliver US/UK spoken pronunciation and Arabic reading guidance. Photos are never linked to a personal profile or identity.
 
 ---
 
-## 3. On-Device Local Data
-Your current session state, accent speed settings (`0.65x`, `0.85x`, `1x`), and local study items stay stored on your device. Built-in sample lessons work offline without sending any data off-device.
+## 3. Data Stored Locally on Your Device
+Your study session preferences, reading speed choices, and local study lessons remain stored on your device. Built-in sample lessons work offline without sending any data off your device.
 
 ---
 
-## 4. Android System Permissions
-Sayasky Voice requests only minimal permissions required for reading and audio playback:
-- `android.permission.INTERNET`: Connect over HTTPS to analyze captured page photos and stream English pronunciation audio.
-- `android.permission.CAMERA`: Capture textbook or worksheet pages when the user chooses Camera Capture (`expo-image-picker`).
-- `android.permission.MODIFY_AUDIO_SETTINGS`, `FOREGROUND_SERVICE`, `FOREGROUND_SERVICE_MEDIA_PLAYBACK`: Manage speech playback and audio controls.
-- `android.permission.VIBRATE`: Standard UI feedback.
-- `android.permission.READ_EXTERNAL_STORAGE` / `WRITE_EXTERNAL_STORAGE` (`maxSdkVersion="32"`): Scoped legacy image picker compatibility on Android 12 and lower only.
+## 4. App Permissions
+Sayasky Voice requests only minimal permissions needed for reading pages and playing audio:
+- **Camera (Optional):** Capture photos of textbook or worksheet pages when you tap Camera Capture.
+- **Photo Gallery Access (Optional):** Choose a study page photo from your device gallery.
+- **Internet Connection:** Connect securely to read English words on your chosen page and stream spoken lesson audio.
+- **Audio & Vibration Controls:** Manage spoken lesson playback and gentle touch feedback.
 
 ---
 
-## 5. Google Play Data Safety Summary
+## 5. Data Safety Summary
 
 | Data Category | Collected? | Shared? | Processing Purpose | Linked to User? |
 | :--- | :--- | :--- | :--- | :--- |
 | **Personal Identifiers** | No | No | No accounts required | N/A |
 | **Location Data** | No | No | Not requested | N/A |
 | **Audio / Microphone** | No | No | Playback only | N/A |
-| **Photos** (User-Selected Page Images) | Yes | No | Core OCR App Functionality | No |
+| **Photos** (User-Selected Page Images) | Yes | No | Page Text Reading & Audio Lessons | No |
 
-- **Encryption in Transit:** All network communication uses HTTPS/TLS.
-- **Data Deletion:** Because no user accounts exist, you can remove all local app data at any time via **Android Settings > Apps > Sayasky Voice > Storage > Clear Data**, or by uninstalling the app.
+- **Encryption in Transit:** All communication between the app and voice service uses an encrypted connection.
+- **Data Deletion:** Because no user accounts exist, you can remove all local app data anytime from your device's app storage settings or by uninstalling the app.
 
 ---
 
 ## 6. Children's Privacy
-Sayasky Voice is an educational language utility intended for general audiences aged 13 and above. We do not knowingly collect personal information from children under 13.
+Sayasky Voice is an educational language app intended for general audiences aged 13 and above. We do not knowingly collect personal information from children under 13.
 
 ---
 
-## 7. Contact & Publisher
-- **Publisher / Developer:** SayaSky
-- **Package ID:** `com.sayasky.voice`
-- **Support Email:** [alsheikh0202@gmail.com](mailto:alsheikh0202@gmail.com)
+## 7. Developer & Support
+- **Developer:** SayaSky
+- **Support:** [Contact Support](mailto:alsheikh0202@gmail.com)
 - **Live Policy Page:** [https://sayasky-s.github.io/sayasky-voice-policy/](https://sayasky-s.github.io/sayasky-voice-policy/)
