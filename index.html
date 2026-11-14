@@ -142,13 +142,15 @@
 
     .pill {
       display: inline-block;
+      max-width: 100%;
       background-color: var(--bg-sage-tint);
       color: var(--accent-sage);
-      padding: 5px 14px;
-      border-radius: 9999px;
+      padding: 6px 14px;
+      border-radius: 16px;
       font-size: 0.8125rem;
       font-weight: 600;
       margin-bottom: 12px;
+      overflow-wrap: anywhere;
     }
 
     .hero-content h2 {
@@ -165,14 +167,16 @@
 
     main {
       padding-bottom: 56px;
-      display: grid;
+      display: flex;
+      flex-direction: column;
       gap: 20px;
     }
 
     .section-card {
       background-color: var(--bg-surface);
       border-radius: 24px;
-      padding: 28px 32px;
+      padding: 28px 24px;
+      max-width: 100%;
     }
 
     .section-card.highlight {
@@ -194,11 +198,13 @@
     .section-card li {
       color: var(--text-secondary);
       font-size: 0.96rem;
+      overflow-wrap: break-word;
     }
 
     .section-card ul {
       padding-inline-start: 20px;
-      display: grid;
+      display: flex;
+      flex-direction: column;
       gap: 10px;
       margin-top: 8px;
     }
@@ -213,9 +219,11 @@
       color: var(--accent-sage-dark);
       padding: 2px 7px;
       border-radius: 6px;
-      font-size: 0.87em;
+      font-size: 0.85em;
       direction: ltr;
       display: inline-block;
+      max-width: 100%;
+      overflow-wrap: anywhere;
     }
 
     .table-wrap {
@@ -234,7 +242,7 @@
 
     th,
     td {
-      padding: 13px 16px;
+      padding: 13px 14px;
     }
 
     th {
@@ -247,26 +255,17 @@
       background-color: rgba(255, 255, 255, 0.55);
     }
 
-    .ar-only {
-      display: none;
-    }
-
+    body:not(.lang-ar) .ar-only,
     body.lang-ar .en-only {
-      display: none;
+      display: none !important;
     }
 
-    body.lang-ar .ar-only {
-      display: initial;
+    .pill-row {
+      margin-bottom: 12px;
     }
 
-    body.lang-ar div.ar-only,
-    body.lang-ar section.ar-only,
-    body.lang-ar ul.ar-only {
+    .hero-content h2 {
       display: block;
-    }
-
-    body.lang-ar ul.ar-only {
-      display: grid;
     }
 
     footer {
