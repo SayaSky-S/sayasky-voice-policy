@@ -37,6 +37,7 @@ Your current session state, accent speed settings (`0.65x`, `0.85x`, `1x`), and 
 ## 4. Android System Permissions
 Sayasky Voice requests only minimal permissions required for reading and audio playback:
 - `android.permission.INTERNET`: Connect over HTTPS to analyze captured page photos and stream English pronunciation audio.
+- `android.permission.CAMERA`: Capture textbook or worksheet pages when the user chooses Camera Capture (`expo-image-picker`).
 - `android.permission.MODIFY_AUDIO_SETTINGS`, `FOREGROUND_SERVICE`, `FOREGROUND_SERVICE_MEDIA_PLAYBACK`: Manage speech playback and audio controls.
 - `android.permission.VIBRATE`: Standard UI feedback.
 - `android.permission.READ_EXTERNAL_STORAGE` / `WRITE_EXTERNAL_STORAGE` (`maxSdkVersion="32"`): Scoped legacy image picker compatibility on Android 12 and lower only.
